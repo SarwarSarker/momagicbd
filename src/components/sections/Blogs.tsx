@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { CiCalendar } from "react-icons/ci";
 import { FiUser } from "react-icons/fi";
+import Image from "next/image";
 
 interface BlogPostProps {
   image: string;
@@ -51,10 +52,12 @@ const BlogPost: React.FC<BlogPostProps> = ({
   return (
     <div className="rounded-xl shadow-lg overflow-hidden group">
       <div className="h-48 overflow-hidden">
-        <img
+        <Image
           src={image}
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          width={1000}
+          height={800}
+          className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
         />
       </div>
       <div className="p-6">
@@ -105,7 +108,10 @@ const BlogSection: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="/" className="text-[#0284c7] rounded-xl py-4 px-6 border-2 border-[#0284c7] hover:bg-[#f0f9ff] ">
+          <Link
+            href="/"
+            className="text-[#0284c7] rounded-xl py-4 px-6 border-2 border-[#0284c7] hover:bg-[#f0f9ff] "
+          >
             Read More Insights
           </Link>
         </div>

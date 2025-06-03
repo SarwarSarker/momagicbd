@@ -25,12 +25,6 @@ const About: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl relative group">
-            {/* <img 
-              src="/images/about.jpg" 
-              alt="MoMagic Bangladesh Team" 
-              className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
-            /> */}
-
             <Image
               src="/images/about.jpg"
               alt="MoMagic Bangladesh Team"

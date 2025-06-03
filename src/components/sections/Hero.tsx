@@ -1,6 +1,7 @@
-import React from 'react';
-import Button from '../ui/Button';
-import { FaArrowRight } from 'react-icons/fa';
+import React from "react";
+import Button from "../ui/Button";
+import { FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
@@ -23,29 +24,27 @@ const Hero: React.FC = () => {
                 <span className="flex h-2 w-2 rounded-full bg-indigo-500 mr-2"></span>
                 Transforming Digital Payments in Bangladesh
               </div>
-              
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 animate-fade-in-up">
                 Powering Digital Payments & Mobile Services
               </h1>
 
               <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 animate-fade-in-up animation-delay-100">
-                Connecting Telcos, MFS, and Enterprises with scalable solutions for mobile billing, digital payments, and content monetization.
+                Connecting Telcos, MFS, and Enterprises with scalable solutions
+                for mobile billing, digital payments, and content monetization.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-200">
-              <Button 
-                variant="primary" 
-                size="lg" 
+              <Button
+                variant="primary"
+                size="lg"
                 icon={<FaArrowRight className="text-xl" />}
               >
                 Partner With Us
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-              >
+              <Button variant="outline" size="lg">
                 Explore Our Products
               </Button>
             </div>
@@ -53,16 +52,28 @@ const Hero: React.FC = () => {
             {/* Stats/Trust Indicators */}
             <div className="grid grid-cols-3 gap-4 pt-4 animate-fade-in-up animation-delay-300">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-400">10M+</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Users Reached</div>
+                <div className="text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-400">
+                  10M+
+                </div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">
+                  Users Reached
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-400">5+</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Telco Partners</div>
+                <div className="text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-400">
+                  5+
+                </div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">
+                  Telco Partners
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-400">15+</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Digital Products</div>
+                <div className="text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-400">
+                  15+
+                </div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">
+                  Digital Products
+                </div>
               </div>
             </div>
           </div>
@@ -70,13 +81,14 @@ const Hero: React.FC = () => {
           {/* Hero Image */}
           <div className="relative hidden md:block animate-fade-in">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
-              <img 
-                src="https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Digital payments in Bangladesh" 
+              <Image
+                src="https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Digital payments in Bangladesh"
+                width={1000}
+                height={800}
                 className="w-full h-auto object-cover"
               />
             </div>
-            
             {/* Floating Element 1 */}
             <div className="absolute top-20 -left-10 z-20 bg-white dark:bg-slate-800 rounded-lg p-3 shadow-lg animate-float">
               <div className="flex items-center gap-3">
@@ -85,11 +97,13 @@ const Hero: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-sm font-medium">Instant Payments</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">Secure & Fast</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">
+                    Secure & Fast
+                  </div>
                 </div>
               </div>
             </div>
-            
+
             {/* Floating Element 2 */}
             <div className="absolute bottom-20 -right-5 z-20 bg-white dark:bg-slate-800 rounded-lg p-3 shadow-lg animate-float animation-delay-500">
               <div className="flex items-center gap-3">
@@ -98,7 +112,9 @@ const Hero: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-sm font-medium">Telco Integration</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">Nationwide Coverage</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">
+                    Nationwide Coverage
+                  </div>
                 </div>
               </div>
             </div>
