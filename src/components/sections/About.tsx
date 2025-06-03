@@ -24,7 +24,7 @@ const About: React.FC = () => {
           {/* Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl relative group">
             <img 
-              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              src="/images/about.jpg" 
               alt="MoMagic Bangladesh Team" 
               className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
             />

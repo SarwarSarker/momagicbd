@@ -1,13 +1,37 @@
-import React from 'react';
+"use client";
 
-// Mock Partner Logos - In a real implementation, you'd use actual logos
+import React from 'react';
+import Image from 'next/image';
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/autoplay";
+
+
 const partnerLogos = [
-  { name: 'Telco Partner 1', logo: '/gp_logo.png' },
-  { name: 'Telco Partner 2', logo: '/gp_logo.png' },
-  { name: 'Telco Partner 3', logo: '/gp_logo.png' },
-  { name: 'MFS Partner 1', logo: '/gp_logo.png' },
-  { name: 'MFS Partner 2', logo: '/gp_logo.png' },
-  { name: 'OEM Partner', logo: '/gp_logo.png' },
+  { name: 'Bkash', logo: '/images/partners/Bkash_logo.png' },
+  { name: 'Grameenphone', logo: '/images/partners/Grameenphone_logo.png' },
+  { name: 'Banglalink', logo: '/images/partners/Banglalink_logo.png' },
+  { name: 'Robi', logo: '/images/partners/Robi_logo.png' },
+  { name: 'Teletalk', logo: '/images/partners/Teletalk_logo.png' },
+  { name: 'Bontel', logo: '/images/partners/Bontel_logo.png' },
+  { name: 'Marcel', logo: '/images/partners/Marcel_logo.png' },
+  { name: 'MARS Technology', logo: '/images/partners/MARS_Technology_logo.png' },
+  { name: 'MEZ', logo: '/images/partners/MEZ_logo.png' },
+  { name: 'Symphony', logo: '/images/partners/Symphony_Logo.png' },
+  { name: 'Walton', logo: '/images/partners/Walton_logo.png' },
+  { name: 'origin data', logo: '/images/partners/origin_data.png' },
+  { name: 'sigma partners', logo: '/images/partners/sigma_partners.png' },
+  { name: 'BM', logo: '/images/partners/BM_Logo.png' },
+  { name: 'Centpercent', logo: '/images/partners/Centpercent.png' },
+  { name: 'Gameloft', logo: '/images/partners/Gameloft.png' },
+  { name: 'numbase', logo: '/images/partners/numbase_logo.png' },
+  { name: 'Taboola', logo: '/images/partners/Taboola_logo.png' },
+  { name: 'Truecaller', logo: '/images/partners/Truecaller.png' },
+  { name: 'Unith', logo: '/images/partners/Unith.png' },
+
+  // { name: 'Nagad', logo: '/images/partners/Nagad_logo.png' },
 ];
 
 const Partners: React.FC = () => {
@@ -23,20 +47,32 @@ const Partners: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={30}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: { slidesPerView: 3, spaceBetween: 30 },
+            768: { slidesPerView: 6, spaceBetween: 40 },
+            1024: { slidesPerView: 9, spaceBetween: 60 },
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
           {partnerLogos.map((partner, index) => (
-            <div 
-              key={index} 
-              className="bg-white dark:bg-slate-800/50 shadow-lg rounded-xl p-6 flex items-center justify-center group hover:shadow-xl transform transition-all duration-300 hover:-translate-y-1 border border-primary-100 dark:border-slate-700/50"
-            >
-              <img 
-                src={partner.logo} 
-                alt={partner.name} 
-                className="max-h-12 opacity-70 group-hover:opacity-100 transition-opacity duration-300" 
-              />
-            </div>
+            <SwiperSlide key={index}>
+              <img
+                  src={partner.logo}  
+                  alt={partner.name}
+                  className="h-full w-full"
+                />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Ready to transform your digital strategy?</h3>
