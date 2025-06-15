@@ -32,7 +32,7 @@ const products: Product[] = [
     link: "#",
     color: "from-blue-500 to-indigo-600",
     imageUrl:
-      "https://images.pexels.com/photos/6893825/pexels-photo-6893825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "/images/products/IVR.png",
   },
   {
     icon: <LuMessageSquare className="h-6 w-6" />,
@@ -42,7 +42,7 @@ const products: Product[] = [
     link: "#",
     color: "from-green-500 to-emerald-600",
     imageUrl:
-      "https://images.pexels.com/photos/4047333/pexels-photo-4047333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "/images/products/A2P_SMS_Gateway.png",
   },
   {
     icon: <LuBrainCircuit className="h-6 w-6" />,
@@ -51,7 +51,7 @@ const products: Product[] = [
     link: "#",
     color: "from-purple-500 to-pink-600",
     imageUrl:
-      "https://images.pexels.com/photos/1251861/pexels-photo-1251861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "/images/products/QuizMuiz.png",
   },
   {
     icon: <LuBaby className="h-6 w-6" />,
@@ -61,7 +61,7 @@ const products: Product[] = [
     link: "#",
     color: "from-yellow-500 to-orange-600",
     imageUrl:
-      "https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "/images/products/mkiddo.png",
   },
   {
     icon: <TbDeviceGamepad className="h-6 w-6" />,
@@ -70,7 +70,7 @@ const products: Product[] = [
     link: "#",
     color: "from-red-500 to-rose-600",
     imageUrl:
-      "https://images.pexels.com/photos/159393/gamepad-video-game-controller-game-controller-controller-159393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "/images/products/xosh_play.png",
   },
   {
     icon: <LuFileText className="h-6 w-6" />,
@@ -79,7 +79,7 @@ const products: Product[] = [
     link: "#",
     color: "from-sky-500 to-cyan-600",
     imageUrl:
-      "https://images.pexels.com/photos/4057663/pexels-photo-4057663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "/images/products/Jante_Chai.png",
   },
   {
     icon: <RiShoppingBag3Line className="h-6 w-6" />,
@@ -89,7 +89,7 @@ const products: Product[] = [
     link: "#",
     color: "from-fuchsia-500 to-violet-600",
     imageUrl:
-      "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "/images/products/Hullor.png",
   },
 ];
 
